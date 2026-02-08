@@ -219,3 +219,8 @@ body.night {
 #navbar a:hover {
   background-color: #ff4f4f;
 }
+
+#navbar a.active {
+  background-color: #fff;
+  color: #ff4f7f;
+}
