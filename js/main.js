@@ -7,14 +7,21 @@ function showPage(id) {
 
   const current = document.getElementById(id);
   if (current) current.classList.add('active');
+
+  // ---------------------------
+  // Подсветка navbar
+  // ---------------------------
+  const navLinks = document.querySelectorAll('#navbar a');
+  navLinks.forEach(link => link.classList.remove('active'));
+
+  const activeLink = document.querySelector(`#navbar a[onclick="showPage('${id}')"]`);
+  if (activeLink) activeLink.classList.add('active');
 }
 
 // ---------------------------
 // 2. День / Ночь
 // ---------------------------
 const themeToggle = document.getElementById('theme-toggle');
-
-// Проверяем localStorage, чтобы тема сохранялась
 let theme = localStorage.getItem('theme') || 'day';
 setTheme(theme);
 
@@ -37,8 +44,6 @@ function setTheme(mode) {
 // ---------------------------
 // 3. Обратный отсчёт до дня рождения
 // ---------------------------
-
-// Установи сюда дату дня рождения: ГГГГ, ММ-1 (0-based), ДД
 const birthday = new Date(2026, 1, 24); // 24 февраля 2026
 
 function updateCountdown() {
@@ -53,14 +58,12 @@ function updateCountdown() {
   }
 }
 
-// Обновляем сразу и каждые 60 секунд
 updateCountdown();
 setInterval(updateCountdown, 60000);
 
 // ---------------------------
-// Готово!
+// 4. Инициализация первой страницы
 // ---------------------------
-// Теперь сайт умеет:
-// - переключать страницы по showPage('id')
-// - менять тему День / Ночь
-// - считать дни до дня рождения
+document.addEventListener('DOMContentLoaded', () => {
+  showPage('home'); // показываем главную при загрузке
+});
