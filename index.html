@@ -14,7 +14,17 @@
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
-  
+  <nav id="navbar">
+    <ul>
+      <li><a href="#" onclick="showPage('home')">Главная</a></li>
+      <li><a href="#" onclick="showPage('calendar')">Календарь</a></li>
+      <li><a href="#" onclick="showPage('map')">Карта</a></li>
+      <li><a href="#" onclick="showPage('compliments')">Комплименты</a></li>
+      <li><a href="#" onclick="showPage('quest')">Квест</a></li>
+      <li><a href="#" onclick="showPage('final')">Финальный</a></li>
+    </ul>
+  </nav>
+
   <!-- Переключатель день/ночь -->
   <div id="theme-toggle">
     🌞 / 🌙
