@@ -1,1 +1,26 @@
-
+[
+  {
+    "date": "2025-09-06",
+    "title": "Первое свидание",
+    "photo": "assets/images/calendar/first_060925.jpg",
+    "description": "Свидание или дружеская встреча? 😊"
+  },
+  {
+    "date": "2025-09-09",
+    "title": "День рождение",
+    "photo": "assets/images/calendar/090925.jpg",
+    "description": "Жай на 5 минуточек подойду поздравлю 🤣"
+  },
+  {
+    "date": "2025-09-12",
+    "title": "Какой у нас тип встречи??",
+    "photo": "assets/images/calendar/120925.jpg",
+    "description": "Первое ОФИЦИАЛЬНОЕ свидание 💖"
+  },
+  {
+    "date": "2025-09-13",
+    "title": "У тебя осталось 13 часов чтобы предложить мне встречаться",
+    "photo": "assets/images/calendar/130925.jpg",
+    "description": "I saw you first time and realize that I wanted you to be mine, so after increadible time I've spent with you I wanna ask you: Will you be my girlfriend?"
+  },
+]
