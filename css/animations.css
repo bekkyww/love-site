@@ -1,1 +1,42 @@
+/* --------------------------
+   Плавные переходы для страниц
+--------------------------- */
+.page {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
+.page.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Кнопки */
+button {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Комплименты: плавное появление текста */
+#compliment-box {
+  transition: opacity 0.5s;
+}
+
+/* Модальные окна */
+#calendar-modal, #map-modal, #quest-modal {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#calendar-modal.show, #map-modal.show, #quest-modal.show {
+  opacity: 1;
+}
+
+/* Звёзды (ночь) плавно мерцают */
+body.night::before {
+  transition: all 1s linear;
+}
