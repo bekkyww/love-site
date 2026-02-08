@@ -1,1 +1,23 @@
-
+[
+  {
+    "name": "Первое место",
+    "lat": 51.1605,
+    "lng": 71.4704,
+    "photo": "assets/images/map/first_place.jpg",
+    "description": "Тут началась наша история 😊"
+  },
+  {
+    "name": "Особое место",
+    "lat": 51.1500,
+    "lng": 71.4700,
+    "photo": "assets/images/map/special_place.jpg",
+    "description": "Очень памятное событие 💖"
+  },
+  {
+    "name": "Будущее место",
+    "lat": 51.1700,
+    "lng": 71.4800,
+    "photo": "assets/images/map/future_place.jpg",
+    "description": "Место, где мы ещё будем ✨"
+  }
+]
