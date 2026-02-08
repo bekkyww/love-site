@@ -1,1 +1,42 @@
+/* --------------------------
+   Фоновые эффекты День / Ночь
+--------------------------- */
 
+/* День: лёгкий градиент солнца */
+body.day {
+  background: linear-gradient(to bottom, #fff7f0, #ffe5d4);
+}
+
+/* Ночь: звёздное небо */
+body.night {
+  background: radial-gradient(circle at top, #1a1a2e, #0d0d1a);
+  color: #f0f0ff;
+  overflow-x: hidden;
+}
+
+/* Звёзды для ночного режима */
+body.night::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: transparent;
+  box-shadow:
+    50px 100px #fff,
+    150px 200px #fff,
+    300px 50px #fff,
+    500px 400px #fff,
+    700px 150px #fff,
+    900px 300px #fff,
+    1100px 200px #fff;
+  animation: twinkle 5s linear infinite;
+  pointer-events: none;
+}
+
+/* Плавное мерцание звёзд */
+@keyframes twinkle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
