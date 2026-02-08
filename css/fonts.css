@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'RussianRailGPro';
+  src: url('../fonts/RussianRailGPro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'RussianRailGPro', Arial, sans-serif;
+}
