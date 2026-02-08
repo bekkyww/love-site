@@ -39,7 +39,7 @@ function setTheme(mode) {
 // ---------------------------
 
 // Установи сюда дату дня рождения: ГГГГ, ММ-1 (0-based), ДД
-const birthday = new Date(2026, 2, 24); // 24 февраля 2026
+const birthday = new Date(2026, 1, 24); // 24 февраля 2026
 
 function updateCountdown() {
   const now = new Date();
