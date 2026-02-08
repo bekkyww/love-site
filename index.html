@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Site</title>
+  
+  <!-- Стили -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  
+  <!-- Переключатель день/ночь -->
+  <div id="theme-toggle">
+    🌞 / 🌙
+  </div>
 
+  <!-- Главная страница -->
+  <section id="home" class="page active">
+    <h1>Привет! Этот сайт для тебя 💌</h1>
+    <p>До твоего дня рождения осталось: <span id="countdown"></span> дней</p>
+    <button onclick="showPage('calendar')">Начать</button>
+  </section>
+
+  <!-- Календарь -->
+  <section id="calendar" class="page">
+    <h2>Календарь воспоминаний</h2>
+    <div id="calendar-container">
+      <!-- JS создаст даты и фото -->
+    </div>
+    <button onclick="showPage('map')">Далее</button>
+  </section>
+
+  <!-- Карта мест -->
+  <section id="map" class="page">
+    <h2>Места, где мы были</h2>
+    <div id="map-container">
+      <!-- JS создаст карту и метки -->
+    </div>
+    <button onclick="showPage('compliments')">Далее</button>
+  </section>
+
+  <!-- Комплименты -->
+  <section id="compliments" class="page">
+    <h2>Комплименты</h2>
+    <div id="compliment-box">Нажми кнопку, чтобы увидеть комплимент</div>
+    <button id="new-compliment">Скажи что-то хорошее</button>
+    <button onclick="showPage('quest')">Далее</button>
+  </section>
+
+  <!-- Квест / сюрпризы -->
+  <section id="quest" class="page">
+    <h2>Сюрпризы и квест</h2>
+    <p>Подсказка: <span id="hint"></span></p>
+    <input type="text" id="code-input" placeholder="Введи код">
+    <button id="submit-code">Отправить</button>
+    <button onclick="showPage('final')">Далее</button>
+  </section>
+
+  <!-- Финальный экран -->
+  <section id="final" class="page">
+    <h2>Поздравляю! 🎉</h2>
+    <p>Ты дошла до конца. Теперь сюрприз ждёт тебя в реальности ❤️</p>
+    <p>Ссылка / QR-код / видео можно добавить здесь</p>
+  </section>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/compliments.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/quest.js"></script>
+</body>
+</html>
